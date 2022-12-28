@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Quicksand';
+}
+
+/* Navbar */
+
+.navbar .btn-login{
+    background: rgb(105, 210, 133);
+}
+
+.navbar ul li {
+    margin: 0px 10px;
+}
+
+/* Heroes Header */
+
+.h-header{
+    height: 100vh;
+}
+
+.h-header .col{
+    padding-top: 75px;
+}
+
+.header-body a{
+    background-color: rgb(108, 204, 135);
+}
+
+/* Facilities */
+
+.facilities{
+    height: 75vh;
+}
