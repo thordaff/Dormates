@@ -95,7 +95,7 @@
 
     <!-- Heroes Background Start -->
 
-    <section>
+    <section class="contents">
         <div class="container">
             <div class="d-flex justify-content-start">
                 <div class="row row-cols-1 row-cols-lg-2 align-items-center">
@@ -115,8 +115,8 @@
 
     <!-- Hereos Team Start -->
 
-    <section>
-        <div class="container">
+    <section class="team">
+        <div class="container mb-5">
             <div class="d-flex justify-content-center">
                 <h1>Team dibalik Dormates</h1>
             </div>
@@ -124,17 +124,38 @@
         <div class="container">
             <div class="d-flex justify-content-center">
                 <div class="row row-cols-1 row-cols-lg-4">
-                    <div class="nia">
-                        <p>Nia</p>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Alhamda bar bakti nata</p>
+                                <p>19.62.0187</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="kayla">
-                        <p>Kayla</p>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Aisha shakila iedwan</p>
+                                <p>21.62.0184</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rosa">
-                        <p>Rosa</p>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Nia mauliza</p>
+                                <br>
+                                <p>21.62.0185</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="alhamda">
-                        <p>Alhamda</p>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Rosalinda christa sabella</p>
+                                <p>21.62.0187</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,10 +166,9 @@
 
     <!-- footer Start -->
 
-    <footer>
+    <footer class="position-relative">
         <div class="container">
-            <div class="text-footer text-center
-            ">
+            <div class="text-footer text-center">
                 <p>Dormates - Tempat Tinggal Sementara Mu</p>
             </div>
         </div>

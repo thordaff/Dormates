@@ -7,55 +7,52 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/auth.css">
     <link rel="stylesheet" href="/assets/css/layout.css">
 
     <title><?php echo $judul?></title>
   </head>
   <body>
 
-    <!-- Content Login Start -->
+    <!-- Content Register Start -->
 
-    <section class="login-view">
+    <section class="register-view">
       <div class="d-flex justify-content-center align-items-center">
-        <div class="card" style="width: 25em;">
-          <div class="card-title mx-auto">
+        <div class="card" style="width: 25em; border-radius: 50px;">
+          <div class="card-title mt-3 mx-auto">
             <h5>Dormates - Register</h5>
           </div>
           <div class="card-body mx-auto">
-            <form action="" method="post">
+            <form action="<?php echo base_url('Auth/Register');?>" method="post">
               <div class="email">
                 <label for="email">Email</label><br>
                 <input type="text" name="email" id="email">
+              </div>
+              <div class="username">
+                <label for="username">username</label><br>
+                <input type="text" name="username" id="username">
               </div>
               <div class="password">
                 <label for="password">Password</label><br>
                 <input type="password" name="password" id="password">
               </div>
-              <div class="button-log mt-3">
+              <div class="nama_lengkap">
+                <label for="nama_lengkap">Nama Lengkap</label><br>
+                <input type="nama_lengkap" name="nama_lengkap" id="nama_lengkap">
+              </div>
+              <div class="button-log mt-3 mb-3">
                 <button>Register</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center mt-5">
         <p>Sudah punya akun ? <a href="<?php echo base_url();?>Auth/login">Login</a></p>
       </div>
     </section>
 
-    <!-- Content Login End -->
-
-    <!-- footer Start -->
-
-    <footer>
-        <div class="container">
-            <div class="text-footer text-center">
-                <p>Dormates - Tempat Tinggal Sementara Mu</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- footer End -->
+    <!-- Content Register End -->
       
 
     <!-- JS File -->

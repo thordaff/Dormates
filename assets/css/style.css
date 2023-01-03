@@ -17,7 +17,7 @@
 /* Heroes Header */
 
 .h-header{
-    height: 100vh;
+    margin-bottom: 250px;
 }
 
 .h-header .col{
@@ -31,5 +31,21 @@
 /* Facilities */
 
 .facilities{
-    height: 75vh;
+    margin-bottom: 250px;
+}
+
+/* Content */
+
+.contents{
+    margin-bottom: 250px;
+}
+
+/* Team */
+
+
+
+/* Footer */
+footer{
+    position: relative;
+    top: 300px;
 }
