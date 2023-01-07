@@ -52,10 +52,6 @@
                         <label for="no_kamar">No Kamar</label><br>
                         <input type="text" name="no_kamar" id="no_kamar" value="<?php echo $s['no_kamar']?>">
                     </div>
-                    <div class="gambar">
-                        <label for="gambar">Gambar Kamar</label><br>
-                        <input type="file" name="gambar" id="gambar">
-                    </div>
                     <div class="Luas Kamar">
                         <label for="luas_kamar">Luas Kamar</label><br>
                         <input type="text" name="luas_kamar" id="luas_kamar" value="<?php echo $s['luas_kamar']?>">
