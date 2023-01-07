@@ -39,7 +39,7 @@
 
     <section class="form-addkamar">
         <div class="container">
-            <div class="d-flex justify-content-start">
+            <div class="d-flex justify-content-center">
                 <?php echo form_open_multipart('Admin/Kamar/addkamar'); ?>
                     <div class="user_id">
                         <input type="hidden" name="id_user" value="<?php echo $user['id_user']?>">
@@ -48,23 +48,23 @@
                         <label for="no_kamar">No Kamar</label><br>
                         <input type="text" name="no_kamar" id="no_kamar">
                     </div>
-                    <div class="gambar">
+                    <div class="gambar mt-3">
                         <label for="gambar">Gambar Kamar</label><br>
                         <input type="file" name="gambar" id="gambar">
                     </div>
-                    <div class="Luas Kamar">
+                    <div class="Luas Kamar mt-3">
                         <label for="luas_kamar">Luas Kamar</label><br>
                         <input type="text" name="luas_kamar" id="luas_kamar">
                     </div>
-                    <div class="harga">
+                    <div class="harga mt-3">
                         <label for="harga_kamar">harga Kamar</label><br>
                         <input type="number" name="harga_kamar" id="harga_kamar">
                     </div>
-                    <div class="deskripsi">
+                    <div class="deskripsi mt-3">
                         <label for="deskripsi">Deskripsi Kost</label><br>
                         <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
                     </div>
-                    <div class="button">
+                    <div class="button mt-5">
                         <button type="reset">Reset</button>
                         <button>Tambah Kamar</button>
                     </div>

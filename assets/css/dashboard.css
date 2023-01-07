@@ -32,3 +32,13 @@ section .photo{
     border-radius: 15px;
     border: 1px solid black;
 }
+
+.button button{
+    border: 1px solid black;
+    background: none;
+    border-radius: 15px;
+}
+
+.form-addkamar input{
+    width: 265px;
+}

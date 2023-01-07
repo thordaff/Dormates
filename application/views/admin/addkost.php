@@ -39,8 +39,8 @@
 
     <section class="form-addkost">
         <div class="container">
-            <div class="d-flex justify-content-start">
-                <form action="<?php echo base_url('Admin/Kost/AddKost');?>" method="post">
+            <div class="d-flex justify-content-center">
+                <?php echo form_open_multipart('Admin/Kost/AddKost'); ?>
                     <div class="user_id">
                         <input type="hidden" name="id_user" value="<?php echo $user['id_user']?>">
                     </div>
@@ -48,19 +48,23 @@
                         <label for="nama_kost">Nama Kost</label><br>
                         <input type="text" name="nama_kost" id="nama_kost">
                     </div>
-                    <div class="alamat">
+                    <div class="gambar mt-3">
+                        <label for="gambar">Gambar Kamar</label><br>
+                        <input type="file" name="gambar" id="gambar">
+                    </div>
+                    <div class="alamat mt-3">
                         <label for="alamat">Alamat Kost</label><br>
                         <input type="text" name="alamat" id="alamat">
                     </div>
-                    <div class="telp">
+                    <div class="telp mt-3">
                         <label for="no_telp">No Telepon Kost</label><br>
                         <input type="number" name="no_telp" id="no_telp">
                     </div>
-                    <div class="button">
+                    <div class="button mt-3">
                         <button type="reset">Reset</button>
                         <button>Tambah Kost</button>
                     </div>
-                </form>
+                <?php echo form_close()?>
             </div>
         </div>
     </section>

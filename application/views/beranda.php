@@ -23,10 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo base_url('Beranda');?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kost</a>
+                        <a class="nav-link" href="<?php echo base_url('Kost');?>">Kost</a>
                     </li>
                 </ul>
                 <a class="btn btn-sm btn-login text-light" href="<?php base_url();?>Auth/login">Login</a>

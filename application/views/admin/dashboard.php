@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-lg-top shadow-sm p-3 mb-5 bg-body-tertiary mt-1">
         <div class="container">
-            <a class="navbar-brand" href="#">Dormates</a>
+            <a class="navbar-brand" href="<?php echo base_url('Beranda');?>">Dormates</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,12 +35,6 @@
 
     <!-- Heroes Content Start -->
 
-    <section class="img">
-        <div class="d-flex justify-content-start">
-            <div class="photo"></div>
-        </div>
-    </section>
-
     <section class="content-kost">
         <?php foreach($show as $s):?>
         <div class="d-flex justify-content-center">
@@ -54,7 +48,10 @@
                 <div class="informs">
                     <h5 class="fw-bold">Informasi Kost</h5>
                     <div class="row row-cols-2">
-                        <div class="col-2 alamat">
+                        <div class="col">
+                            <img src="<?php echo base_url().'./img-kost/'.$s['gambar']?>" width="300">
+                        </div>
+                        <div class="col-3 me-5 alamat">
                             <p>Alamat</p>
                             <hr>
                             <p><?php echo $s['alamat']?></p>
@@ -77,12 +74,13 @@
                                     <div class="content-body ms-5">
                                         <p>No kamar</p>
                                         <h1><?php echo $s['no_kamar']?></h1>
+                                        <p>Rp. <?php echo $s['harga_kamar']?></p>
                                         <p><?php echo $s['deskripsi']?></p>
                                         <p><?php echo $s['status']?></p>
                                     </div>
                                     <div class="controller ms-5">
-                                        <a href="<?php echo base_url('Admin/Kamar/edit/').$s['id_kamar'];?>">Edit</a>
-                                        <a href="<?php echo base_url('Admin/Dashboard/delete/').$s['id_kamar'];?>">Hapus</a>
+                                        <a href="<?php echo base_url('Admin/Kamar/edit/').$s['id_kamar'];?>"><i class="fa-solid fa-pen-to-square" style="color: black;"></i></a>
+                                        <a href="<?php echo base_url('Admin/Dashboard/delete/').$s['id_kamar'];?>"><i class="fa-solid fa-trash" style="color: red;"></i></a>
                                     </div>
                                 </div>
                             </div>
