@@ -41,7 +41,10 @@
         <div class="container">
             <?php foreach($showK as $s) :?>
             <div class="d-flex justify-content-start">
-                <form action="<?php echo base_url('Admin/Kamar/AddKamar');?>" method="post">
+                <form action="<?php echo base_url('Admin/Kamar/EditKamar');?>" method="post">
+                    <div class="id_kamar">
+                        <input type="hidden" name="id_kamar" value="<?php echo $s['id_kamar']?>">
+                    </div>
                     <div class="user_id">
                         <input type="hidden" name="id_user" value="<?php echo $user['id_user']?>">
                     </div>

@@ -40,13 +40,17 @@
     <section class="form-addkamar">
         <div class="container">
             <div class="d-flex justify-content-start">
-                <form action="<?php echo base_url('Admin/Kamar/AddKamar');?>" method="post">
+                <?php echo form_open_multipart('Admin/Kamar/addkamar'); ?>
                     <div class="user_id">
                         <input type="hidden" name="id_user" value="<?php echo $user['id_user']?>">
                     </div>
                     <div class="No Kamar">
                         <label for="no_kamar">No Kamar</label><br>
                         <input type="text" name="no_kamar" id="no_kamar">
+                    </div>
+                    <div class="gambar">
+                        <label for="gambar">Gambar Kamar</label><br>
+                        <input type="file" name="gambar" id="gambar">
                     </div>
                     <div class="Luas Kamar">
                         <label for="luas_kamar">Luas Kamar</label><br>
@@ -64,7 +68,7 @@
                         <button type="reset">Reset</button>
                         <button>Tambah Kamar</button>
                     </div>
-                </form>
+                <?php echo form_close()?>
             </div>
         </div>
     </section>

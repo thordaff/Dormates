@@ -73,7 +73,7 @@
                         <?php foreach($showK as $s):?>
                             <div class="card my-2 me-2" style="width: 34rem;">
                                 <div class="card-body d-flex justify-content-start">
-                                    <img src="/assets/images/default.jpg" width="200">
+                                    <img src="<?php echo base_url().'./img-kamar/'.$s['gambar']?>" width="200">
                                     <div class="content-body ms-5">
                                         <p>No kamar</p>
                                         <h1><?php echo $s['no_kamar']?></h1>
@@ -81,7 +81,7 @@
                                         <p><?php echo $s['status']?></p>
                                     </div>
                                     <div class="controller ms-5">
-                                        <a>Edit</a>
+                                        <a href="<?php echo base_url('Admin/Kamar/edit/').$s['id_kamar'];?>">Edit</a>
                                         <a href="<?php echo base_url('Admin/Dashboard/delete/').$s['id_kamar'];?>">Hapus</a>
                                     </div>
                                 </div>
